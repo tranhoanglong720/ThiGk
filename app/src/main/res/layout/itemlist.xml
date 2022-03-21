@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="347dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/border_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imganh"
+        android:layout_width="158dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.427"
+        app:srcCompat="@drawable/niceglass2_removebg_preview_1" />
+
+    <TextView
+        android:id="@+id/txtten"
+        android:layout_width="104dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="28dp"
+        android:hint="Name"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/imganh" />
+
+    <TextView
+        android:id="@+id/txtgia"
+        android:layout_width="100dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:hint="Prince"
+        android:textColor="#0D2CD6"
+        app:layout_constraintStart_toStartOf="@+id/txtten"
+        app:layout_constraintTop_toBottomOf="@+id/txtten" />
+
+    <TextView
+        android:id="@+id/txtkieu"
+        android:layout_width="98dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:hint="For tyoe"
+        android:textColor="#130101"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/txtgia"
+        app:layout_constraintTop_toBottomOf="@+id/txtgia" />
+</androidx.constraintlayout.widget.ConstraintLayout>

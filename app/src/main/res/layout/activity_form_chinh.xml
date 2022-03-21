@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#E68E0C"
+    tools:context=".FormChinh">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/border_item"
+        android:id="@+id/appCompatButton4"
+        android:layout_width="79dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#E48C0A"
+        android:text="Man"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/appCompatButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/border_item"
+        android:id="@+id/appCompatButton"
+        android:layout_width="79dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#EFE8E8"
+        android:text="Womam"
+        android:textColor="#0C0000"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatButton4"
+        app:layout_constraintEnd_toStartOf="@+id/appCompatButton2"
+        app:layout_constraintTop_toTopOf="@+id/appCompatButton4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/border_item"
+        android:id="@+id/appCompatButton2"
+        android:layout_width="85dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#F1ECEC"
+        android:text="Children"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatButton"
+        app:layout_constraintEnd_toStartOf="@+id/appCompatButton3"
+        app:layout_constraintTop_toTopOf="@+id/appCompatButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton3"
+        android:background="@drawable/border_item"
+        android:layout_width="79dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#F1EBEB"
+        android:text="All"
+        android:textColor="#090000"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appCompatButton2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ListView
+        android:id="@+id/listitem"
+        android:layout_width="413dp"
+        android:layout_height="625dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
